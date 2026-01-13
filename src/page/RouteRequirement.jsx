@@ -1,4 +1,7 @@
 import { useState } from "react";
+<div className="min-h-screen bg-red-600 text-white text-4xl flex items-center justify-center">
+  TAILWIND WORKING
+</div>
 
 export default function RouteRequirement() {
   const [customer, setCustomer] = useState("");
