@@ -1,6 +1,6 @@
 function Dashboard() {
   return (
-    <div className="flex-1 overflow-y-auto p-10 bg-gradient-to-br from-gray-50 to-gray-100">
+    <div className="flex-1 overflow-y-auto p-10 bg-white-to-br from-gray-50 to-gray-100">
 
       {/* HEADER */}
       <h1 className="text-5xl font-black text-gray-800 mb-4">
@@ -32,8 +32,9 @@ function Dashboard() {
 function KpiCard({ title, value, color }) {
   return (
     <div
-      className={`bg-gradient-to-r ${color} text-white p-6 rounded-3xl shadow-xl
-                  transition-all hover:scale-105 hover:shadow-2xl`}
+     className={`bg-gradient-to-r ${color} text-white p-6 rounded-3xl shadow-xl
+transition-all hover:scale-105 hover:shadow-2xl`}
+
     >
       <div className="text-4xl font-black">{value}</div>
       <div className="text-sm">{title}</div>

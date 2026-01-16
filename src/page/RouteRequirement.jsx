@@ -53,16 +53,18 @@ export default function RouteRequirement() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-indigo-100 via-purple-100 to-pink-100 p-8">
+       <div className="h-full bg-white p-4">
       <div className="max-w-7xl mx-auto bg-white rounded-3xl shadow-2xl overflow-hidden">
 
         {/* HEADER */}
-        <div className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 text-white p-10 text-center">
+        <div className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 text-white p-7 text-center">
           <h1 className="text-3xl font-bold">New Route Requirement – Multiple Destinations</h1>
           <p className="mt-2 opacity-90">One customer → Add as many routes as needed</p>
         </div>
 
-        <div className="p-8 space-y-10">
+     <div className="h-full bg-white p-4 overflow-hidden">
+
+
 
           {/* CUSTOMER */}
           <div className="bg-blue-50 border border-blue-200 p-6 rounded-2xl">
@@ -78,7 +80,7 @@ export default function RouteRequirement() {
           </div>
 
           {/* ADD ROUTE */}
-          <div className="bg-gray-50 border rounded-2xl p-6">
+          <div className="bg-gray-50 border rounded-2xl p-2">
             <h2 className="text-xl font-bold mb-4">Add Route Details</h2>
 
             <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">

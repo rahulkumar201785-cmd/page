@@ -6,31 +6,19 @@ import RouteRequirement from "./page/RouteRequirement";
 function App() {
   return (
     <BrowserRouter>
-      <div className="flex min-h-screen">
-        <Sidebar />
+  <div className="flex h-screen bg-white">
+    <Sidebar />
 
-        {/* RIGHT SIDE FULL WIDTH */}
-        <Routes>
-          <Route
-            path="/"
-            element={
-              <div className="flex-1">
-                <Dashboard />
-              </div>
-            }
-          />
+    {/* RIGHT SIDE */}
+    <div className="flex-1 overflow-y-auto bg-white">
+      <Routes>
+        <Route path="/" element={<Dashboard />} />
+        <Route path="/requirements/new" element={<RouteRequirement />} />
+      </Routes>
+    </div>
 
-          <Route
-            path="/requirements/new"
-            element={
-              <div className="flex-1">
-                <RouteRequirement />
-              </div>
-            }
-          />
-        </Routes>
-      </div>
-    </BrowserRouter>
+  </div>
+</BrowserRouter>
   );
 }
 
